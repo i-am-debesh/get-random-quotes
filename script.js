@@ -4,7 +4,7 @@ const authorText = document.querySelector('.author');
 const getQuoteBtn = document.querySelector('.get-quote-btn');
 
 const clearField = ()=> {
-    quotetText.innerText = 'Fact :'
+    quotetText.innerText = 'Quote :'
     authorText.innerText = 'Author :';
 }
 const getQuote = async ()=>{
