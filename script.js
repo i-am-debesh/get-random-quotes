@@ -1,23 +1,26 @@
-const url = 'https://api.quotable.io/quotes/random';
-const quotetText = document.querySelector('.quote-text');
-const authorText = document.querySelector('.author');
-const getQuoteBtn = document.querySelector('.get-quote-btn');
+const url = '';
 
-const clearField = ()=> {
-    quotetText.innerText = 'Quote :'
-    authorText.innerText = 'Author :';
-}
-const getQuote = async ()=>{
-    let response = await fetch(url);
-    let data = await response.json();
-    let quote = data[0].content;
-    let author = data[0].author;
+// const quotetText = document.querySelector('.quote-text');
+// const authorText = document.querySelector('.author');
+// const getQuoteBtn = document.querySelector('.get-quote-btn');
 
-    quotetText.innerText = (quotetText.innerText)+` ${quote}`;
-    authorText.innerText = (authorText.innerText)+` ${author}`;
-}
+// const clearField = ()=> {
+//     quotetText.innerText = 'Quote :'
+//     authorText.innerText = 'Author :';
+// }
+// const getQuote = async ()=>{
+//     let response = await fetch(url);
+//     let data = await response.json();
+//     let quote = data[0].content;
+//     let author = data[0].author;
 
-getQuoteBtn.addEventListener('click', ()=>{
-    clearField();
-    getQuote();
-});
+//     quotetText.innerText = (quotetText.innerText)+` ${quote}`;
+//     authorText.innerText = (authorText.innerText)+` ${author}`;
+// }
+
+// getQuoteBtn.addEventListener('click', ()=>{
+//     clearField();
+//     getQuote();
+// });
+
+
