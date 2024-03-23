@@ -26,7 +26,8 @@ function getQuote() {
   })
   .then(jsonData => {
     //console.log('Parsed JSON data:', jsonData);
-    const idx = getRandomInt(0,49);
+    const idx = getRandomInt(0,jsonData.length-1);
+    //console.log(`${idx} / ${jsonData.length-1}`);
     const quote = jsonData[idx].q;
     const author = jsonData[idx].a;
 
